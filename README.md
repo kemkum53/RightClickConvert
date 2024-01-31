@@ -4,13 +4,23 @@ This application created for simple convert proccesses. Currently, it only works
 
 ## Installation
 ### Download
-1-) [Download files](https://drive.google.com/file/d/1ri4Xgw-qq2PVcDTI_m44hOyh4rGzSJrh/view?usp=sharing) (If you want you can pull code, rebuild and run.)
+- [Download files](https://drive.google.com/file/d/1ri4Xgw-qq2PVcDTI_m44hOyh4rGzSJrh/view?usp=sharing) (If you want you can pull code, rebuild and run. Check Manuel Installation)
+- Start 'RightClickConvert.exe' and finish installation.
+- After installation right click .mp4 file and select convert. And you can convert any format what you want.
+- Enjoy ^^
 
-2-) Start 'RightClickConvert.exe' and finish installation.
+### Manuel Installation
+- Pull code.
+- Rebuild all solutions. If you got error and can't fix you can create a new issue.
+- Publish both applications. With this settings ![image](https://github.com/kemkum53/RightClickConvert/blob/master/readme_files/ss_1.png?raw=true)
+- Go to 'RightClickConvertApp' published folder location. And copy 'RightClickConvertApp.exe'.
+- Now go to 'RightClickConvert' published folder location. Paste 'RightClickConvertApp.exe'
+- Start as adminastrator 'RightClickConvert' and complate installation.
 
-3-) After installation right click .mp4 file and select convert. And you can convert any format what you want.
-
-4-) Enjoy ^^
+## Usage
+- Right click the .mp4 file(If you are using Windows 10 or above, 'Shift + Right Click') and select 'Convert'. ![image](https://github.com/kemkum53/RightClickConvert/blob/master/readme_files/ss_2.png?raw=truE)
+- Select what format you want to convert and press 'Convert' button. ![image](https://github.com/kemkum53/RightClickConvert/blob/master/readme_files/ss_3.png?raw=truE)
+- Wait until the message box appears. Click 'Ok' and its done. ![image](https://github.com/kemkum53/RightClickConvert/blob/master/readme_files/ss_4.png?raw=truE)
 
 ## Code Explanation
 ### RightClickConvert
@@ -95,3 +105,7 @@ void Convert(string outputFile, string type)
 
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
+
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kemal-kondak%C3%A7%C4%B1-b62173157/)
+
