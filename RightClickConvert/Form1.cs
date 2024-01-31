@@ -36,7 +36,7 @@ public partial class Form1 : Form
                 Directory.CreateDirectory(programFolder);
             }
             Progress(4);
-            //Get 'ffmpeg.exe' and 'RightClickConvertApp.exe' files path
+            //Copy 'ffmpeg.exe' and 'RightClickConvertApp.exe' files to %appdata% folder
             File.Copy(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ffmpeg.exe"), programFolder + "\\ffmpeg.exe", true);
             File.Copy(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "RightClickConvertApp.exe"), programFolder + "\\RightClickConvertApp.exe", true);
 

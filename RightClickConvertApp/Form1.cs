@@ -69,7 +69,7 @@ namespace RightClickConvertApp
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Beklenmedik bir hata oluþtu. \n" + ex);
+                MessageBox.Show("An error occurred during installation. \n" + ex);
                 Application.Exit();
             }
         }
@@ -88,11 +88,11 @@ namespace RightClickConvertApp
 
                 if (type == "mp4")
                     args = "-i " + inputFile + outputFile;
-                if (type == "mp4(h264)")
+                else if (type == "mp4(h264)")
                     args = "-i " + inputFile + " -c:v libx264 -c:a mp3 " + outputFile;
-                if (type == "mp4(h265)")
+                else if (type == "mp4(h265)")
                     args = "-i " + inputFile + " -c:v libx265 -c:a mp3 " + outputFile;
-                if (type == "mp4(mpeg4)")
+                else if (type == "mp4(mpeg4)")
                     args = "-i " + inputFile + " -c:v mpeg4 -c:a mp3 " + outputFile;
 
                 else if (type == "avi")
@@ -115,12 +115,12 @@ namespace RightClickConvertApp
                         Arguments = args
                     }
                 };
-                ffmpegProc.Start();
-                timer1.Start();
+                ffmpegProc.Start(); 
+                timer1.Start(); //Start timer and to wait process finish
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Beklenmedik bir hata oluþtu. \n" + ex);
+                MessageBox.Show("An error occurred during installation. \n" + ex);
                 Application.Exit();
             }
         }
