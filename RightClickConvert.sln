@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RightClickConvert", "RightClickConvert\RightClickConvert.csproj", "{0F7093E7-55D8-4A5B-AEAE-38A35DF5D686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RightClickConvertApp", "RightClickConvertApp\RightClickConvertApp.csproj", "{1575680E-8BF1-40D9-A84D-B1C6F39DE38E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F7093E7-55D8-4A5B-AEAE-38A35DF5D686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7093E7-55D8-4A5B-AEAE-38A35DF5D686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7093E7-55D8-4A5B-AEAE-38A35DF5D686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7093E7-55D8-4A5B-AEAE-38A35DF5D686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1575680E-8BF1-40D9-A84D-B1C6F39DE38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1575680E-8BF1-40D9-A84D-B1C6F39DE38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1575680E-8BF1-40D9-A84D-B1C6F39DE38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1575680E-8BF1-40D9-A84D-B1C6F39DE38E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5269F3FF-1567-4881-A67F-0FDA11F3BE17}
+	EndGlobalSection
+EndGlobal
