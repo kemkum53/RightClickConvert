@@ -84,6 +84,10 @@ namespace RightClickConvertApp
         {
             try
             {
+                //Add " to output and input files
+                outputFile = "\"" + outputFile + "\"";
+                inputFile = "\"" + inputFile + "\"";
+
                 string args = "";
 
                 if (type == "mp4")
