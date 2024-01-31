@@ -11,7 +11,7 @@ This application created for simple convert proccesses. Currently, it only works
 
 ### Manuel Installation
 - Pull code.
-- Rebuild all solutions. If you got error and can't fix you can create a new issue.
+- Rebuild solution. If you got error and can't fix you can create a new issue.
 - Publish both applications. With this settings 
 - ![image](https://github.com/kemkum53/RightClickConvert/blob/master/readme_files/ss_1.png?raw=false)
 - Go to 'RightClickConvertApp' published folder location. And copy 'RightClickConvertApp.exe'.
