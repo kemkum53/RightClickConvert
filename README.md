@@ -66,7 +66,7 @@ void Convert(string outputFile, string type)
         string args = "";
 
         if (type == "mp4")
-            args = "-i " + inputFile + outputFile;
+            args = "-i " + inputFile + " " + outputFile;
         else if (type == "mp4(h264)")
             args = "-i " + inputFile + " -c:v libx264 -c:a mp3 " + outputFile;
         else if (type == "mp4(h265)")
