@@ -12,15 +12,15 @@ This application created for simple convert proccesses. Currently, it only works
 ### Manuel Installation
 - Pull code.
 - Rebuild all solutions. If you got error and can't fix you can create a new issue.
-- Publish both applications. With this settings ![image](https://github.com/kemkum53/RightClickConvert/blob/master/readme_files/ss_1.png?raw=true)
+- Publish both applications. With this settings ![image](https://github.com/kemkum53/RightClickConvert/blob/master/readme_files/ss_1.png?raw=false)
 - Go to 'RightClickConvertApp' published folder location. And copy 'RightClickConvertApp.exe'.
 - Now go to 'RightClickConvert' published folder location. Paste 'RightClickConvertApp.exe'
 - Start as adminastrator 'RightClickConvert' and complate installation.
 
 ## Usage
-- Right click the .mp4 file(If you are using Windows 10 or above, 'Shift + Right Click') and select 'Convert'. ![image](https://github.com/kemkum53/RightClickConvert/blob/master/readme_files/ss_2.png?raw=truE)
-- Select what format you want to convert and press 'Convert' button. ![image](https://github.com/kemkum53/RightClickConvert/blob/master/readme_files/ss_3.png?raw=truE)
-- Wait until the message box appears. Click 'Ok' and its done. ![image](https://github.com/kemkum53/RightClickConvert/blob/master/readme_files/ss_4.png?raw=truE)
+- Right click the .mp4 file(If you are using Windows 10 or above, 'Shift + Right Click') and select 'Convert'. ![image](https://github.com/kemkum53/RightClickConvert/blob/master/readme_files/ss_2.png?raw=false)
+- Select what format you want to convert and press 'Convert' button. ![image](https://github.com/kemkum53/RightClickConvert/blob/master/readme_files/ss_3.png?raw=false)
+- Wait until the message box appears. Click 'Ok' and its done. ![image](https://github.com/kemkum53/RightClickConvert/blob/master/readme_files/ss_4.png?raw=false)
 
 ## Code Explanation
 ### RightClickConvert
