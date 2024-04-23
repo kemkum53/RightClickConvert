@@ -13,6 +13,12 @@ namespace RightClickConvertApp
             InitializeComponent();
             this.inputFile = inputFile;
             //For size_reduction (canceled)
+            //If file tpye is avi set combobox items
+            if (Program.fileType == ".avi")
+            {
+                cmb_type.Items.Clear();
+                cmb_type.Items.Add("mp4");
+            }
             if (isDetach)
             {
                 Opacity = 0;
@@ -89,23 +95,36 @@ namespace RightClickConvertApp
                 inputFile = "\"" + inputFile + "\"";
 
                 string args = "";
+                //If file type is avi convert just mp4(for now)
+                if (Program.fileType == ".avi")
+                {
+                    if (type != "mp4")
+                    {
+                        MessageBox.Show("'.avi' formatý sadece '.mp4' formatýna çevirilebilir.");
+                        return;
+                    }
+                    else
+                        args = "-i " + inputFile + " " + outputFile;
+                    
+                }
+                else if(Program.fileType == ".mp4")
+                {
+                    if (type == "mp4")
+                        args = "-i " + inputFile + " " + outputFile;
+                    else if (type == "mp4(h264)")
+                        args = "-i " + inputFile + " -c:v libx264 -c:a mp3 " + outputFile;
+                    else if (type == "mp4(h265)")
+                        args = "-i " + inputFile + " -c:v libx265 -c:a mp3 " + outputFile;
+                    else if (type == "mp4(mpeg4)")
+                        args = "-i " + inputFile + " -c:v mpeg4 -c:a mp3 " + outputFile;
 
-                if (type == "mp4")
-                    args = "-i " + inputFile + " " +outputFile;
-                else if (type == "mp4(h264)")
-                    args = "-i " + inputFile + " -c:v libx264 -c:a mp3 " + outputFile;
-                else if (type == "mp4(h265)")
-                    args = "-i " + inputFile + " -c:v libx265 -c:a mp3 " + outputFile;
-                else if (type == "mp4(mpeg4)")
-                    args = "-i " + inputFile + " -c:v mpeg4 -c:a mp3 " + outputFile;
-
-                else if (type == "avi")
-                    args = "-i " + inputFile + " -c:v copy -c:a copy " + outputFile;
-                else if (type == "mp3")
-                    args = "-i " + inputFile + " " + outputFile;
-                else if (type == "wav")
-                    args = "-i " + inputFile + " -ac 2 -f wav " + outputFile;
-
+                    else if (type == "avi")
+                        args = "-i " + inputFile + " -c:v copy -c:a copy " + outputFile;
+                    else if (type == "mp3")
+                        args = "-i " + inputFile + " " + outputFile;
+                    else if (type == "wav")
+                        args = "-i " + inputFile + " -ac 2 -f wav " + outputFile;
+                }
 
                 ffmpegProc = new Process
                 {
