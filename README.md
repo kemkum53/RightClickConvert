@@ -110,6 +110,14 @@ void Convert(string outputFile, string type)
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
+## TODO List
+- Add more convert types
+- Make the 'convert' option applicable only to video files, rather than all files.
+
+
+## Change Log
+###  2024-04-23
+- **Added** - .avi to .mp4 convert settings.
+
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kemal-kondak%C3%A7%C4%B1-b62173157/)
-
