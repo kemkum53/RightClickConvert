@@ -1,10 +1,14 @@
 using System.Diagnostics;
+using System.Drawing.Imaging;
+using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace RightClickConvertApp
 {
     internal static class Program
     {
         public static string ffmpegPath;
+        public static string fileType;
         static bool isDetach;
         static string inputFile;
 
@@ -27,7 +31,12 @@ namespace RightClickConvertApp
 
             inputFile = arguments["-i"]; //Get input file full path
             string extension = Path.GetExtension(inputFile);
-            if (extension != ".mp4") return; //TODO: only mp4 this could be change
+            fileType = extension.ToLower(new CultureInfo("en-gb"));
+            if (!(extension.ToLower() != ".mp4" || extension.ToLower() == ".avi")) return; //TODO: only mp4 and avi this could be change(update avi format convert settings)
+            
+            //If file extension is .AVI replace with .avi
+            if (extension == ".AVI")
+                File.Move(inputFile, inputFile = inputFile.Replace(".AVI", ".avi"));
 
             ffmpegPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"RightClickConvert\ffmpeg.exe"); //Get ffmpeg full path
             Application.Run(new Form1(isDetach, inputFile));

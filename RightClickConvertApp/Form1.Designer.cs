@@ -102,9 +102,9 @@
         #endregion
 
         private Label label1;
-        private ComboBox cmb_type;
         private Button btn_convert;
         private System.Windows.Forms.Timer timer1;
         private Label lbl_converting;
+        public ComboBox cmb_type;
     }
 }
