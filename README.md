@@ -9,7 +9,7 @@ This application created for simple convert proccesses. Currently, it only works
 - After installation right click .mp4 file and select convert. And you can convert any format what you want.
 - Enjoy ^^
 
-### Manuel Installation
+### Manual Installation
 - Pull code.
 - Rebuild solution. If you got error and can't fix you can create a new issue.
 - Publish both applications. With this settings 
